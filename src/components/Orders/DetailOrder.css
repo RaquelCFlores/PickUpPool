@@ -20,7 +20,9 @@ select{
     height: 30px;
     border-radius: 5px;
 }
-
+.my-orders p{
+    font-size: large;
+}
 .confirm input{
     background: #F71963;
     border-radius: 15px;

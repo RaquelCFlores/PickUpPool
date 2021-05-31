@@ -4,7 +4,9 @@
     align-items: center;
     width: 100%;
 }
-
+.conteiner-userorders p{
+    font-size: large;
+}
 .conteiner-orders {
     display: flex;
     flex-direction: column;
@@ -38,7 +40,7 @@
     width: 85%;
     height: 53px;
     background: #FFFFFF;
-    border: 3px solid #717786;
+    border: 2px solid #717786;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 10px 0;

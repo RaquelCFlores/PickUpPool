@@ -1,0 +1,77 @@
+.cancelContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 640px;
+    align-items: center;
+    color: #142032;
+}
+
+.titleCancel{
+    margin-bottom: -17px;
+}
+
+.buttonCancel{
+    margin-top: 20px;
+    width: 88%;
+    height: 430px;
+    outline: solid 1px #142032;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.prueba{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    height: 397px;
+}
+
+.firstButton{
+    width: 68%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 6%;
+    background-color: #E7E9EE;
+}
+
+.secondButton{
+    width: 68%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 6%;
+    background-color: #E7E9EE;
+}
+
+.thirdButton{
+    width: 68%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: -3%;
+    background-color: #E7E9EE;
+}
+
+.buttonCancel p{
+    margin-bottom: 1px;
+}
+
+.buttonCancel textarea{
+    width: 68%;
+    height: 90px;
+    margin-bottom: 8%;
+    border: solid 1px #717786;
+}
+
+.enviar{
+    background-color: #F71963;
+    width: 35%;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
