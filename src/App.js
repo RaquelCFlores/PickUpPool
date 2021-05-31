@@ -8,12 +8,9 @@ import Principal from './components/Principal/Principal';
 import DetailOrder from './components/Orders/DetailOrder'
 import { Register } from './components/Register/Register';
 import { Login } from './components/Login/Login';
-<<<<<<< HEAD
 import PickerQualification from './components/Qualification/PickerQualification';
-=======
 import { PickerProfile } from './components/Profile/PickerProfile';
 import { FormNewPicker } from './components/FormNewPicker/FormNewPicker';
->>>>>>> 80d2637 (pickerProfile / formNewPicker)
 
 function App() {
   const [user, setUser] = useState(null) //No hubo nada establecido(ningún valoor)
@@ -41,30 +38,25 @@ function App() {
           <Route path='/orders'>
             <UserOrders user={user}/>
           </Route>
-<<<<<<< HEAD
 
           <Route path='/deliveries'>
             <PickerOrders user={user}/>
           </Route>
 
-=======
           <Route path='/pickerProfile'>
             <PickerProfile user={user}/>
           </Route>
->>>>>>> 80d2637 (pickerProfile / formNewPicker)
           <Route exact path='/'>
             <Login user={user} />
           </Route>
           <Route path='/details'>
             <DetailOrder />
           </Route>
-<<<<<<< HEAD
           <Route path='/qualify'>
-            <PickerQualification/>
-=======
+            <PickerQualification user={user}/>
+          </Route>
           <Route path='/newPicker'>
-            <FormNewPicker />
->>>>>>> 80d2637 (pickerProfile / formNewPicker)
+            <FormNewPicker user={user} />
           </Route>
         </Switch>
       </div>

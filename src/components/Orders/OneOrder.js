@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 
 function OneOrder() {
     const [createN, setCreate] = useState([]);
-    const [selectedOrder, setSelectedOrder] = useState(null);
+    // const [selectedOrder, setSelectedOrder] = useState(null);
     let history = useHistory();
 
     function handleClick() {
@@ -23,7 +23,7 @@ function OneOrder() {
 
     return (
         <>
-            <div onClick={handleClick} order={selectedOrder} className="ordersDad">
+            <div onClick={handleClick}  className="ordersDad">
             {
                 createN.length !== 0 ? (
                     createN.map((item) => (

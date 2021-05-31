@@ -17,7 +17,7 @@ function UserOrders() {
         <>
             <Navbar />
             <div className='conteiner-userorders'>
-                <h2>Mis pedidos</h2>
+                <p>Mis pedidos</p>
                     <div className="conteiner-orders">
                         <OneOrder />
                     </div>

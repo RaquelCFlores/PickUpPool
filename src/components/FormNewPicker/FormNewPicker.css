@@ -6,7 +6,7 @@
 }
 .newPicker p{
     font-size:large;
-    margin-left: -180px;
+    /* margin-left: -180px; */
 }
 .formPicker{
     display: flex;
