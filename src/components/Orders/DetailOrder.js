@@ -5,18 +5,14 @@ import swal from 'sweetalert';
 import arrow from '../../assets/back.png';
 
 
+
 const DetailOrder =()=>{
 
     let history = useHistory();
 
     function handleClick() {
-        history.push('/orders');
+        history.push('/pickerProfile');        
     }
-
-    const alertSuccess =()=>{
-        swal('Pedido programado','¡La información de tu entrega ha sido guardada exitosamente!', 'success');
-    }
-
     return(
         <div className='viewPrincipal'>
             <Navbar/>
@@ -68,7 +64,7 @@ const DetailOrder =()=>{
                             </select>
                         </div>
                         <div className='confirm'>
-                            <input type="submit" value="Confirmar Pickeo" />
+                            <button onClick={handleClick}>Confirmar Pickeo</button>
                         </div>
                     </form>
                 </section>
