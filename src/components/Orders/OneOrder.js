@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import { db,collectionOrders } from '../../firebase'
+import { db, collectionOrders } from '../../firebase'
 import './UserOrders.css'
 import { useHistory } from 'react-router-dom'
 
@@ -16,6 +16,7 @@ function OneOrder() {
         const getOrders = async () => {
             const { docs } = await collectionOrders()
             const newArray = docs.map((item) => ({ id: item.id, ...item.data() }))
+            console.log(newArray);
             setCreate(newArray)
         }
         getOrders()
@@ -27,9 +28,8 @@ function OneOrder() {
             console.log(data.data())
             history.push({
                 pathname: `/details`,
-                search: `?id=${id}`
-              })
-              
+                search: `?id=${id}`,
+            })
         } catch (e){
             console.log(e,"no existen datos")
         }
@@ -52,7 +52,7 @@ function OneOrder() {
                         <span>No existen ordenes</span>
                         )
             }
-             </div> 
+            </div> 
         </>
     );
 }
