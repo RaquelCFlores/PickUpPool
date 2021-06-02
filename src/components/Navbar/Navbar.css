@@ -4,19 +4,20 @@
     padding: 5px 30px;
     color: white;
 }
-
 .return{
     width: 40px;
     margin: 15px;
     position: fixed;
     left: 2%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 88bfe1fe7e9f5504d463efcaac6f1896b908a756
 .sloganApp{
     position: absolute;
     left: 5%;
 }
-
 .logOut{
     right: 8%;
     position: absolute;

@@ -14,7 +14,6 @@ const Navbar =()=>{
         auth.signOut().then(() => console.log("Salir"));
     }
 
-
     return(
         <div className='navbar'>
             <p className='sloganApp' onClick={handleClickPrincipal}>PickUp PooL</p>
